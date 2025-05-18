@@ -37,11 +37,9 @@ A lightning‑fast, React + TypeScript app that lets users search products i
 ------------------------------------------------------------------------------------------------
 
 
-![Screenshot 2025-05-18 164322](https://github.com/user-attachments/assets/0b7ca254-1577-4fe7-9550-97c38b4dc67b)
-
-
-
-![Screenshot 2025-05-18 164330](https://github.com/user-attachments/assets/068b351f-ea60-4a65-b668-a7199fd96bc2)
+##  Screenshots 
+![Screenshot 2025-05-18 172114](https://github.com/user-attachments/assets/48946b20-37ce-43c5-838a-63d3df2d29f4)
+![Screenshot 2025-05-18 172127 - Copy](https://github.com/user-attachments/assets/548873eb-40e0-4d55-987b-b197de92adb6)
 
 
 
