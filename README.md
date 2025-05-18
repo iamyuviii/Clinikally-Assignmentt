@@ -31,7 +31,7 @@ A lightning‑fast, React + TypeScript app that lets users search products i
    ```bash
    npm start
    
-3. **Open to view the project (make sure that not any other page is running on port 3000 )**  
+3. **Open to view the project (make sure that no other project is running on port 3000 )**  
    ```bash
    http://localhost:3000
 ------------------------------------------------------------------------------------------------
