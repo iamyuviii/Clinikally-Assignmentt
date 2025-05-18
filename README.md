@@ -12,8 +12,7 @@ A lightning‑fast, React + TypeScript app that lets users search products i
 - **CSS** – Plain, modular CSS (no Tailwind)  
 - **Fetch API** – Built‑in, promise‑based HTTP requests  
 - **DummyJSON** – Public fake‑products API  
-- **Debounce** (`setTimeout`) – Throttle API calls on input  
-- **Infinite Scroll** – Auto‑load more items on scroll  
+- **Debounce** (`setTimeout`) – Throttle API calls on input   
 - **CSS Animations** – Fade placeholder, spinner keyframes  
 
 ---
@@ -24,7 +23,65 @@ A lightning‑fast, React + TypeScript app that lets users search products i
    ```bash
    git clone https://github.com/iamyuviii/Clinikally-assignment-.git
 
-npm install
+2. **Install Dependency**  
+   ```bash
+   npm install
 
-npm start
-  
+3. **Start porject**  
+   ```bash
+   npm start
+   
+3. **Open to view the project (make sure that not any other page is running on port 3000 )**  
+   ```bash
+   http://localhost:3000
+------------------------------------------------------------------------------------------------
+
+
+
+ ## 💡 Thought Process & Approach
+
+### 🧠 User-First UX
+- **🔄 Real-Time Feedback**  
+  Search input uses **debounced requests (300ms)** — the app waits until the user stops typing to send API calls, reducing server load and improving performance.
+
+---
+
+### 🧩 Modular Component Design
+
+- **`Autocomplete` Component**  
+  Handles:
+  - Search state management  
+  - Debounced input  
+  - Infinite scrolling  
+  - Placeholder rotation  
+  - Open/close logic  
+  - API interaction  
+
+- **`ProductList` Component**  
+  Pure presentational component that:
+  - Displays product info
+  - Handles empty thumbnails (fallback)
+  - Applies truncation & hover effects for clean UI
+
+- **`Spinner` Component**  
+  Lightweight loading indicator using CSS keyframes, used during initial load and infinite scroll states.
+
+---
+
+### ⚙️ Performance & Clean Code
+- Written in **TypeScript** with clearly defined interfaces for `Product` and API response shape.
+- A single fetch function handles both full result replacement (new search) and incremental appending (infinite scroll).
+- Clean code and readable structure with separation of logic and UI.
+
+---
+
+### 🎨 Styling
+- Semantic class names like `.autocomplete-container`, `.product-item`, etc.
+- Global reset and utility classes ensure consistent look & spacing.
+
+---
+
+### ♿ Accessibility & Polish
+- Dropdown closes on outside click for better UX.
+- Supports keyboard navigation with proper focus outlines.
+- Animated, rotating placeholder text keeps UI lively.
