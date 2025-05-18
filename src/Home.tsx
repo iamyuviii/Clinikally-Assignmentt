@@ -18,8 +18,8 @@ export default function Home() {
           <span className="main-headline-secondary">Product Search</span>
         </h1>
         <p className="main-subtitle">
-        Discover products instantly as you type just seamless infinite scrolling.<br />
-        just seamless infinite scrolling
+        Discover Products Instantly with Smart Search<br />
+        Real-time autocomplete, infinite scroll, animated UI, and seamless product exploration.
         </p>
         <div className="search-bar-wrapper">
           <span className="search-icon">
